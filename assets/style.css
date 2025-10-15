@@ -1,0 +1,177 @@
+body {
+  font-family: 'Poppins', sans-serif; 
+  margin: 0;
+  padding: 0;
+  background-color: #E0F2FE;
+  background-image: radial-gradient(#BFDBFE 1px, transparent 1px),
+                    radial-gradient(#BFDBFE 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  color: #333;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.paw-bg {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/616/616408.png');
+  background-repeat: repeat;
+  background-size: 60px;
+  opacity: 0.05;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+}
+
+body::after {
+  content: "🐾 🐾 🐾";
+  font-size: 2rem;
+  opacity: 0.1;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  pointer-events: none;
+  transform: rotate(-15deg);
+}
+
+.navbar {
+  background-color: #a2d2ff;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #bde0fe;
+  position: sticky; 
+  top: 0;
+  z-index: 1000;  
+}
+
+
+.navbar h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #fff6f6;
+}
+
+.content {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  margin: 30px auto;
+  width: 85%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  position: relative;
+  z-index: 1;
+}
+
+a.button, button {
+  background-color: #a2d2ff; 
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+a.button:hover, button:hover {
+  background-color: #bde0fe;
+  transform: scale(1.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+th {
+  background-color: #a2d2ff;
+  color: white;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f6f9ff;
+}
+
+tr:hover {
+  background-color: #e0f2fe;
+}
+
+form {
+  max-width: 500px;  
+  margin: 20px auto; 
+  padding: 20px;
+  background-color: #ffffff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+label {
+  display: block; 
+  margin-bottom: 8px; 
+  font-weight: 600; 
+  color: #333; 
+}
+
+input, textarea, select {
+  width: 100%; 
+  padding: 10px;
+  margin-bottom: 15px; 
+  border: 1px solid #a2d2ff; 
+  border-radius: 6px; 
+  font-family: 'Poppins', sans-serif; 
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #bde0fe;
+  outline: none; 
+}
+
+button, .button {
+  background-color: #a2d2ff; 
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover, .button:hover {
+  background-color: #bde0fe;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #bde0fe;
+  color: #333;
+  border-top: 3px solid #a2d2ff;
+  font-weight: 500;
+}
